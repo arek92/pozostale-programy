@@ -17,7 +17,7 @@ public class Main {
 
         do {
 
-            double liczbaProcentRazem = 100.00;
+           double liczbaProcentRazem = 100.00;
             double ileProcentStawiaNaPolskeNaPoczatku = 0.0;
 
             System.out.println("Czy polska wygra z francja (Tak/Nie)");
@@ -29,10 +29,8 @@ public class Main {
                 System.out.println("Liczba osob ktora zaglosowala na tak to  " + " " + liczbaGlosowNaTak);
                 System.out.println("Liczba osob ktora zaglosowala na nie to  " + " " + liczbaGlosowNaNie);
                 double procent = liczbaProcentRazem/liczbaGlosow; //100.00/1
-                ileProcentStawiaNaPolskeNaPoczatku = liczbaGlosowNaTak * procent; //1 * 100.00
-                ileProcentStawiaNaFrancjeNaPoczatku = liczbaGlosowNaNie*procent; //0* 100.00
-                System.out.println("Procentowo na polske stawia : " + ileProcentStawiaNaPolskeNaPoczatku + " " + " procent ");
-                System.out.println("Procentowo na francje stawia : " + ileProcentStawiaNaFrancjeNaPoczatku + " " + " procent ");
+                System.out.println("procentowo na polske stawia : " + (Math.round(liczbaGlosowNaTak*procent)));
+                System.out.println("procentowo na francje stawia : " + (Math.round(liczbaGlosowNaNie*procent)));
 
             }
             if (odpowiedz.equals("Nie")) {
@@ -40,11 +38,8 @@ public class Main {
                 System.out.println("Liczba osob ktora zaglosowala na nie to " + " " + liczbaGlosowNaNie);
                 System.out.println("Liczba osob ktora zaglosowala na tak to " + " " + liczbaGlosowNaTak);
                 double procent = liczbaProcentRazem/liczbaGlosow; //100.00/1
-                ileProcentStawiaNaPolskeNaPoczatku = liczbaGlosowNaTak * procent; //1 * 100.00
-                ileProcentStawiaNaFrancjeNaPoczatku = liczbaGlosowNaNie*procent; //0* 100.00
-                System.out.println("Procentowo na polske stawia : " + ileProcentStawiaNaPolskeNaPoczatku + " " + " procent ");
-                System.out.println("Procentowo na francje stawia : " + ileProcentStawiaNaFrancjeNaPoczatku + " " + " procent ");
-
+                System.out.println("procentowo na polske stawia : " + (Math.round(liczbaGlosowNaNie*procent)));
+                System.out.println("procentowo na francje stawia : " + (Math.round(liczbaGlosowNaTak*procent)));
                 //jak obliczyc procent z akutalnej liczby glosow
 
 
