@@ -1,0 +1,10 @@
+casa,dom
+preghiera,modlitwa
+parlare,mówić
+cantare,śpiewać
+bello,piękny
+orologio,zegarek
+macchina,samochód
+litigare,kłócić się
+stampare,drukować
+treno,pociąg
